@@ -5,7 +5,7 @@ Ask485 🕸️
 
 <h4>Explore page</h4>
 
-<img src="ask485.png" alt="ask485" width="200">
+<img src="ask485.png" alt="ask485" width="800">
 
 
 <h2>Project 1: Templated Static Site Generator ⚙</h2>
