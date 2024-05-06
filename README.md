@@ -7,13 +7,13 @@ Ask485 🕸️
 <img src="ask485.png" alt="ask485" width="800">
 
 <h2>Part 1: Inverted Index</h2>
-<p>A segmented inverted index of web pages using a pipeline of MapReduce programs. Wrote each map and reduce program as a stand-alone Python program compatible with the Hadoop Streaming Interface. The input is a copy of a subset of Wikipedia pages crawled from Michigan- and technology-related seed pages. The output is an inverted index containing inverse document frequency, term frequency, and document normalization factor. The output is several files segmented by document.</p>
+<p>A segmented inverted index of web pages using a pipeline of MapReduce programs. Wrote each map and reduce program as a stand-alone Python program compatible with the Hadoop Streaming Interface.</p>
 
 <h2>Part 2: Index Server</h2>
-<p>A REST API app that returns search results in JSON format.</p>
+<p>A REST API app that returns search results in JSON format. Uses vector mathematics and Page Rank integration to order search results by order of importance.</p>
 
 <h2>Part 3: Search Server</h2>
-<p>A user interface implemented with server-side dynamic pages. A user enters a query and the Search server returns a page of search results, just like Google. The Search server backend makes REST API requests in parallel threads to each Index server and combines the results from each inverted index segment. It then displays the top 10 results to the client.</p>
+<p>A user interface implemented with server-side dynamic pages. The Search server backend makes REST API requests in parallel threads to each Index server and combines the results from each inverted index segment. It then displays the top 10 results to the client.</p>
 
 
 
