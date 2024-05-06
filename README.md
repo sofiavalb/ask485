@@ -1,54 +1,19 @@
 Ask485 🕸️
 ===========================
 <h3>Description ✍️</h3>
-<p>A three-part project using a templated static site generator, server-side dynamic pages, and client-side dynamic pages to develop an Instagram clone. Deployed using AWS.</p>
+<p>A scalable search engine similar to Google. Developed using information retrieval concepts like text analysis (tf-idf) and link analysis (PageRank), as well as parallel data processing with MapReduce. Used a Service-Oriented Architecture to scale dynamic pages and web search.</p>
 
 <h4>Explore page</h4>
-
 <img src="ask485.png" alt="ask485" width="800">
 
+<h2>Part 1: Inverted Index</h2>
+<p>A segmented inverted index of web pages using a pipeline of MapReduce programs. Wrote each map and reduce program as a stand-alone Python program compatible with the Hadoop Streaming Interface. The input is a copy of a subset of Wikipedia pages crawled from Michigan- and technology-related seed pages. The output is an inverted index containing inverse document frequency, term frequency, and document normalization factor. The output is several files segmented by document.</p>
 
-<h2>Project 1: Templated Static Site Generator ⚙</h2>
+<h2>Part 2: Index Server</h2>
+<p>A REST API app that returns search results in JSON format.</p>
 
-<h3>Description</h3>
-<p>A Python backend that takes in HTML templates, JSON data, and miscellaneous static files (such as images and CSS) and generates a website of static content.</p>
-
-### Tools
-- HTML
-- CSS
-- Jinja templates
-- Python backend
-- Shell scripting
-
-
-<h2>Project 2: Server-side Dynamic Pages 📃</h2>
-
-<h3>Description</h3>
-<p>Built an interactive website using server-side dynamic pages. Reused templates from Project 1, rendering them on-demand when a user loads a page. New features include creating; updating; deleting users, posts, comments, and likes; and secure sign-in with cookies provided by Flask sessions.</p>
-
-### Tools
-- Server-side dynamic pages
-- CRUD (Create, Read, Update, Delete)
-- Flask
-  - Sessions
-- SQL database
-- AWS
-
-
-<h2>Project 3: Client-side Dynamic Pages 📄</h2>
-
-<h3>Description</h3>
-<p>Built an application using client-side dynamic pages and a REST API. Reused server-side code from project 2, refactoring portions into a REST API. Wrote a client application in JavaScript using React that runs in the browser and makes AJAX calls to a REST API. New features include updating with page reload, double tapping to like a post, and infinite scroll.</p>
-
-### Tools
-- Client-side dynamic pages
-- JavaScript
-  - React
-- Asynchronous programming
-  - AJAX
-- REST APIs
-- Command line
-
+<h2>Part 3: Search Server</h2>
+<p>A user interface implemented with server-side dynamic pages. A user enters a query and the Search server returns a page of search results, just like Google. The Search server backend makes REST API requests in parallel threads to each Index server and combines the results from each inverted index segment. It then displays the top 10 results to the client.</p>
 
 <p>Licensed under a Creative Commons Attribution-NonCommercial 4.0 License</p>
 <p>Original Project written by Andrew DeOrio</p>
