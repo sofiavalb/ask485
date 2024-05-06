@@ -3,17 +3,9 @@ Ask485 🕸️
 <h3>Description ✍️</h3>
 <p>A three-part project using a templated static site generator, server-side dynamic pages, and client-side dynamic pages to develop an Instagram clone. Deployed using AWS.</p>
 
-<h4>Account page</h4>
-
-![awdeorio account](awdeorio.png)
-
 <h4>Explore page</h4>
 
-![discover](discover.png)
-
-<h4>Follower post on homepage</h4>
-
-![homepage](chicken_post.png)
+![ask485](ask485.png)
 
 
 <h2>Project 1: Templated Static Site Generator ⚙</h2>
