@@ -10,7 +10,7 @@ Ask485 🕸️
 <p>A segmented inverted index of web pages using a pipeline of MapReduce programs. Wrote each map and reduce program as a stand-alone Python program compatible with the Hadoop Streaming Interface.</p>
 
 <h2>Part 2: Index Server</h2>
-<p>A REST API app that returns search results in JSON format. Uses vector mathematics, Page Rank integration, and the weight specified by the user to order search results by order of relevance.</p>
+<p>A REST API app that returns search results in JSON format. It uses vector mathematics, Page Rank integration, and the weight specified by the user to order search results by order of relevance.</p>
 
 <h2>Part 3: Search Server</h2>
 <p>A user interface implemented with server-side dynamic pages. The Search server backend makes REST API requests in parallel threads to each Index server and combines the results from each inverted index segment. It then displays the top 10 results to the client.</p>
